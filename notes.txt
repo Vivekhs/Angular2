@@ -1,0 +1,25 @@
+1. Install Angular 2 CLI: npm install -g angular-cli
+2. Create a Angular Project: ng new Project-Name
+    => if u want to use a prefix : ng new recipe-book --prefix rb
+3. ng serve
+4. Install typescript: npm install -g typescript
+5. Inline style format : styles:[`
+  h1 {
+  color:red;
+  }
+`]
+6. Inline template format : template: `<h1>{{title}}</h1>`
+7. To create a component through cli : ng generate component other
+8. ng generate component another --flat --inline-styles --inline-template short form of this is :
+ng g c another --f --is --it
+:=> because of --flat it will not create a folder with the component name
+9. Shadow DOM for VIEW Encapsulation : Angular 2 add styles to the <head> and add [attribute-selector] to them by using this
+only specific kind of elements get that style
+10. Data Binding Methods:
+    => String Interpolation : {{Expression resolving to a String}}
+    => Property binding : <button [disabled]="Expression resolved to required value type"
+    => Event Binding : <button (click) ="Expression handling the event">
+    => Two-Way Binding : <input [(ngModel)] ="bound model (i.e Object)"
+
+11. Property types: DOM properties, Directive properties, Component properties
+Directive Properties : ngClass, ngSubmit
