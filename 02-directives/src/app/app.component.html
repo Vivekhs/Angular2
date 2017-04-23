@@ -1,0 +1,32 @@
+<h1>
+    {{title}}
+</h1>
+<h1>Custome Attribute Directives</h1>
+<div [highlight]="'red'" [defaultColor]="'blue'" class="highlight1">Custom Directives</div>
+<h1>Structural Directives</h1>
+<h1>*ngIf</h1>
+<h1 *ngIf="switch">Conditional text</h1>
+<template [ngIf]="switch">
+    <h1>Conditional text</h1>
+</template>
+<button (click)="onSwitch()">Switch</button>
+<h1>*ngFor</h1>
+<ul>
+    <ul *ngFor="let item of items; let i=index">* {{item}} - (Index : {{i}})</ul>
+</ul>
+
+<h1>ngSwitch</h1>
+<div [ngSwitch]="value">
+    <p *ngSwitchCase="10">10</p>
+    <p *ngSwitchCase="100">100</p>
+    <p *ngSwitchDefault>Default</p>
+</div>
+
+<!--<div [ngSwitch]="value">
+    <p [ngSwitchCase]="10">10</p>
+    <p [ngSwitchCase]="100">100</p>
+    <p *ngSwitchDefault>1000</p>
+</div>-->
+
+<h1>Custom Structural Directive</h1>
+<h2 *unless="switch">Conditional text</h2>

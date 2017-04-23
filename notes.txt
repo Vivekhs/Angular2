@@ -23,3 +23,12 @@ only specific kind of elements get that style
 
 11. Property types: DOM properties, Directive properties, Component properties
 Directive Properties : ngClass, ngSubmit
+
+12. Attribute Directives : ngClass, ngStyle
+=> Directives don't have to have Property or Event Bindings.
+=> Structural Directives interact with the current view container and change the structure of
+the DOM/ HTML code : examples -> *ngIf, *ngFor
+=> <div [ngClass]="{border:false}"></div>
+=> <div [class.border]="true"></div>
+=> <div [ngStyle]="{'background-color':'red'}"></div>
+=> ngOnInit only reached when all the bound properties have been initialized.
